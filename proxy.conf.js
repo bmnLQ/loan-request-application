@@ -24,7 +24,7 @@ function getTarget() {
         const restServerURL = process.env.REST_SERVER_URL;
         return restServerURL;
     }
-    return 'http://172.23.0.1:3000';
+    return 'http://172.23.0.1:' + (process.env.PORT || '3000');
 }
 
 const target = getTarget();
