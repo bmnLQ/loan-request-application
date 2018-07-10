@@ -24,7 +24,7 @@ function getTarget() {
         const restServerURL = process.env.REST_SERVER_URL;
         return restServerURL;
     }
-    return 'http://18.205.116.58:' + (process.env.PORT || '3000');
+    return 'http://18.205.116.58:3000';// + (process.env.PORT || '3000');
 }
 
 const target = getTarget();
